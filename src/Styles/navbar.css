@@ -1,0 +1,30 @@
+.navbar {
+  width: 100%;
+  padding: 15px;
+  height: 50px;
+  background-color: #12aa2c;
+  display: felx;
+  justify-content: center;
+  align-items: center;
+}
+.rotating-text {
+  font-size: 25px;
+  color: #61fb82;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #61fb82;
+  padding: 10px;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #61fb82;
+  }
+}
